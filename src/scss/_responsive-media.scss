@@ -1,0 +1,64 @@
+@media (min-width: 50em) {
+  .container {
+    width: calc(100% - 150px);
+    margin-inline: auto;
+  }
+  .grid {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+  .toggle-icon {
+    display: none;
+  }
+  .navbar {
+    .menu {
+      .navbar-links {
+        display: flex;
+      }
+    }
+  }
+  .hero {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      div:first-child {
+        padding: 100px 45px 0px 100px;
+      }
+      h1 {
+        padding: 0px 0px 35px 0px;
+      }
+      div:last-child {
+        margin-top: 40px;
+      }
+    }
+  }
+  .trusted {
+    flex-direction: row;
+    padding: 90px 0px;
+    div:first-child {
+      padding-left: 100px;
+      flex: 0 1 13%;
+    }
+    div:last-child {
+      margin-left: 54px;
+    }
+  }
+  .about-us {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 4.4rem;
+    }
+  }
+  .services {
+    padding: 0px 25px;
+    .grid {
+      column-gap: 5px;
+    }
+  }
+  .projects {
+    .container {
+      div {
+        padding: 0px 25px;
+      }
+    }
+  }
+}

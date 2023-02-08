@@ -1,0 +1,100 @@
+//navbar
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 101px 27px 71px;
+  .menu {
+    .navbar-links {
+      display: none;
+      li {
+        a {
+          font-size: 20px;
+          text-decoration: none;
+          color: $neutral-black;
+          text-transform: uppercase;
+          padding: 0px 25px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+//hero
+.hero {
+  .grid {
+    div:first-child {
+      padding: 25px 25px 50px 25px;
+      h1 {
+        padding-bottom: 35px;
+      }
+      p {
+        padding-bottom: 50px;
+      }
+    }
+    div img {
+      height: 100%;
+    }
+  }
+}
+
+//trusted
+.trusted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.about-us {
+  padding: 0px 25px;
+  div:last-child {
+    padding: 50px 0px 66px 0px;
+    h2 {
+      padding-top: 25px;
+    }
+    p {
+      padding-top: 35px;
+    }
+  }
+}
+
+//services
+.services {
+  padding: 0px 25px;
+  .container div h2 {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  .grid {
+    .services-image {
+      position: relative;
+      p {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+      }
+    }
+  }
+}
+//projects
+.projects {
+  .container {
+    div:first-child {
+      padding: 0px 25px;
+    }
+  }
+}
+
+//cta
+.cta {
+  background-image: url("/public/assets/images/CTA.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  div {
+    padding: 50px 0px 63px 25px;
+  }
+}

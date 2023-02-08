@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700&family=Raleway:wght@600;700&family=Work+Sans:wght@400;600;700&display=swap");
+
+//variables
+$neutral-black: #000000;
+$neutral-white: #ffffff;
+$neutral-grey: #717171;
+$neutral-black-100: #3d3d3d;
+$neutral-white-100: #f2f2f2;
+
+//utilities
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-24: 24px;
+$fs-32: 32px;
+$fs-40: 40px;
+$fs-52: 52px;
+
+.fs-14 {
+  font-size: $fs-14;
+}
+.fs-16 {
+  font-size: $fs-16;
+}
+.fs-18 {
+  font-size: $fs-18;
+}
+.fs-20 {
+  font-size: $fs-20;
+}
+.fs-24 {
+  font-size: $fs-24;
+}
+.fs-32 {
+  font-size: $fs-32;
+}
+.fs-40 {
+  font-size: $fs-40;
+}
+.fs-52 {
+  font-size: $fs-52;
+}
+
+.fw-400 {
+  font-weight: $fw-400;
+}
+.fw-500 {
+  font-weight: $fw-500;
+}
+.fw-600 {
+  font-weight: $fw-600;
+}
+.fw-700 {
+  font-weight: $fw-700;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+p,
+a,
+button {
+  font-family: "Inconsolata", monospace;
+  // font-family: "Work Sans", sans-serif;
+}
+.grid {
+  display: grid;
+  grid-auto-flow: row;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

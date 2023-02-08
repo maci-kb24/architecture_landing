@@ -1,0 +1,20 @@
+.contact-btn {
+  background-color: $neutral-white;
+  padding: 11px 25px;
+  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
+}
+
+.hero-btn {
+  background-color: $neutral-black;
+  margin-bottom: 33px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: $neutral-white;
+  padding: 11px 25px;
+  img {
+    margin-left: 15px;
+  }
+}
