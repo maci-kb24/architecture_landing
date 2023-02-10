@@ -1,4 +1,63 @@
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    .toggle-button {
+      display: flex;
+    }
+    .navbar-links {
+      display: none;
+      width: 100%;
+      margin-top: 10px;
+      ul {
+        width: 100%;
+        flex-direction: column;
+        background-color: $neutral-black;
+        li {
+          text-align: center;
+          a {
+            padding: 0.5rem 1rem;
+            color: $neutral-white;
+          }
+        }
+      }
+    }
+    .navbar-links.active {
+      display: flex;
+    }
+    .contact {
+      display: none;
+    }
+  }
+}
+
 @media (min-width: 50em) {
+  h1 {
+    font-size: $fs-52;
+    line-height: 60px;
+  }
+  h2 {
+    font-size: $fs-40;
+    line-height: 54px;
+  }
+  h4 {
+    font-size: $fs-24;
+    line-height: 32px;
+  }
+  h6 {
+    font-size: $fs-18;
+    line-height: 21px;
+  }
+  p {
+    font-size: $fs-18;
+    line-height: 24px;
+  }
+  .contact-btn,
+  .hero-btn,
+  .cta-btn {
+    font-size: $fs-18;
+    line-height: 19px;
+  }
   .container {
     width: calc(100% - 150px);
     margin-inline: auto;
@@ -7,25 +66,23 @@
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
-  .toggle-icon {
-    display: none;
-  }
   .navbar {
-    .menu {
-      .navbar-links {
-        display: flex;
-      }
-    }
+    padding: 27px 101px 27px 70px;
   }
   .hero {
+    padding-bottom: 90px;
     .grid {
       grid-template-columns: repeat(2, 1fr);
       div:first-child {
-        padding: 100px 45px 0px 100px;
+        padding: 100px 45px 33px 100px;
+        h1 {
+          padding: 0px 0px 35px 0px;
+        }
+        p {
+          padding-bottom: 50px;
+        }
       }
-      h1 {
-        padding: 0px 0px 35px 0px;
-      }
+
       div:last-child {
         margin-top: 40px;
       }
@@ -33,31 +90,70 @@
   }
   .trusted {
     flex-direction: row;
-    padding: 90px 0px;
     div:first-child {
-      padding-left: 100px;
-      flex: 0 1 13%;
+      padding-left: 71px;
+      flex: 0 1 20%;
+      h4 {
+        padding-bottom: 0px;
+      }
     }
     div:last-child {
       margin-left: 54px;
     }
   }
   .about-us {
+    padding: 90px 0px;
     .grid {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 4.4rem;
+      .about-us-right {
+        h2 {
+          padding-top: 25px;
+        }
+        p {
+          padding-top: 35px;
+        }
+      }
     }
   }
   .services {
-    padding: 0px 25px;
+    padding: 0px;
+    .container div h2 {
+      padding-top: 25px;
+    }
     .grid {
       column-gap: 5px;
     }
   }
   .projects {
+    padding: 90px 0px;
     .container {
-      div {
-        padding: 0px 25px;
+      div:first-child {
+        h2 {
+          padding-top: 25px;
+        }
+      }
+    }
+  }
+  .testimonials {
+    padding: 90px 0px;
+    .testimonial-content {
+      h2 {
+        padding: 25px 0px 35px 0px;
+      }
+    }
+  }
+  .blog {
+    padding: 90px 0px 100px 0px;
+  }
+  .footer {
+    padding: 75px 0px 17px 0px;
+    .flex {
+      flex-direction: row;
+      div:first-child {
+        hr {
+          display: none;
+        }
       }
     }
   }

@@ -74,6 +74,37 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+h1 {
+  font-size: $fs-32;
+  line-height: 42px;
+}
+h2 {
+  font-size: $fs-24;
+  line-height: 34px;
+}
+h4 {
+  font-size: $fs-20;
+  line-height: 24px;
+}
+h6 {
+  font-size: 1.13rem;
+  font-size: clamp(
+    1.13rem,
+    1.1286857624262847rem + 0.10109519797809612vw,
+    1.25rem
+  );
+  line-height: 21px;
+}
+p {
+  font-size: $fs-14;
+  font-size: clamp(
+    0.88rem,
+    0.8764827122066122rem + 0.3112644064944898vw,
+    1.25rem
+  );
+  line-height: 18px;
+}
+
 p,
 a,
 button {

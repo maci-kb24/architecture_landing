@@ -4,16 +4,37 @@
   border: 1px solid #000000;
   display: flex;
   align-items: center;
+  font-size: $fs-14;
+  line-height: 15px;
+  // border: none;
 }
 
 .hero-btn {
   background-color: $neutral-black;
-  margin-bottom: 33px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   color: $neutral-white;
   padding: 11px 25px;
+  font-size: $fs-14;
+  line-height: 15px;
+  border: none;
+  img {
+    margin-left: 15px;
+  }
+}
+
+.cta-btn {
+  background-color: $neutral-black;
+  margin-top: 25px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: $neutral-white;
+  padding: 11px 25px;
+  font-size: $fs-14;
+  line-height: 15px;
+  border: none;
   img {
     margin-left: 15px;
   }

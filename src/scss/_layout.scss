@@ -1,36 +1,54 @@
 //navbar
 .navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 27px 101px 27px 71px;
-  .menu {
-    .navbar-links {
-      display: none;
-      li {
-        a {
-          font-size: 20px;
-          text-decoration: none;
-          color: $neutral-black;
-          text-transform: uppercase;
-          padding: 0px 25px;
-          font-weight: 600;
-        }
-      }
+  color: $neutral-black;
+  padding: 25px 0px;
+  .logo {
+    padding-left: 25px;
+  }
+  .contact {
+    display: block;
+    padding-right: 25px;
+  }
+}
+.navbar-links {
+  height: 100%;
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    a {
+      display: block;
+      text-decoration: none;
+      color: $neutral-black;
+      padding: 0px 1rem;
     }
   }
+}
+.toggle-button {
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+  display: none;
 }
 
 //hero
 .hero {
+  padding-bottom: 50px;
   .grid {
     div:first-child {
       padding: 25px 25px 50px 25px;
       h1 {
-        padding-bottom: 35px;
+        padding-bottom: 15px;
       }
       p {
-        padding-bottom: 50px;
+        padding-bottom: 25px;
       }
     }
     div img {
@@ -44,18 +62,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0px;
+  h4 {
+    padding-bottom: 25px;
+  }
 }
 
+//about-us
 .about-us {
-  padding: 0px 25px;
-  div:last-child {
-    padding: 50px 0px 66px 0px;
+  padding: 50px 25px;
+  // margin: 0px 25px;
+  .about-us-left {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    .about-us-image {
+      flex: 0.5;
+      margin-right: 7px;
+    }
+    .about-us-image1 {
+      flex: 0.5;
+      margin-left: 7px;
+    }
+    .about-us-content {
+      position: absolute;
+      bottom: -36px;
+      left: 83px;
+      background-color: $neutral-white-100;
+      padding: 20px 25px 21px 29px;
+      display: flex;
+      hr {
+        margin: 0px 26px;
+      }
+    }
+  }
+  .about-us-right {
+    padding: 40px 0px 0px 0px;
     h2 {
-      padding-top: 25px;
+      padding-top: 15px;
     }
     p {
-      padding-top: 35px;
+      padding-top: 15px;
     }
   }
 }
@@ -64,25 +110,50 @@
 .services {
   padding: 0px 25px;
   .container div h2 {
-    padding-top: 25px;
+    padding-top: 15px;
     padding-bottom: 35px;
   }
   .grid {
+    row-gap: 1.5rem;
     .services-image {
       position: relative;
-      p {
+      h6 {
         position: absolute;
-        bottom: 0;
-        left: 30%;
+        bottom: 25px;
+        left: 25px;
+        color: $neutral-white;
       }
     }
   }
 }
 //projects
 .projects {
+  padding: 50px 0px;
   .container {
     div:first-child {
       padding: 0px 25px;
+      h2 {
+        padding-top: 15px;
+        padding-bottom: 35px;
+      }
+    }
+    .projects-slider {
+      position: relative;
+      img {
+        height: 40vh;
+      }
+      h6 {
+        position: absolute;
+        left: 50px;
+        bottom: 120px;
+        color: $neutral-white;
+      }
+      p:last-child {
+        position: absolute;
+        left: 50px;
+        bottom: 40px;
+        color: $neutral-white;
+      }
     }
   }
 }
@@ -93,8 +164,77 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 30vh;
-  div {
-    padding: 50px 0px 63px 25px;
+  height: 63vh;
+  .cta-content {
+    padding-top: 78px;
+  }
+}
+
+//testimonials
+.testimonials {
+  padding: 50px 25px;
+  .grid {
+    gap: 3.1rem;
+  }
+  .testimonial-content {
+    h2 {
+      padding: 21px 0px 40px 0px;
+    }
+  }
+  .testimonial-card {
+    background-color: $neutral-white-100;
+    padding: 25px 21px 40px 25px;
+    .testimonial-flex {
+      display: flex;
+    }
+  }
+}
+
+//blog
+.blog {
+  padding: 50px 25px;
+  .grid {
+    column-gap: 3.1rem;
+    row-gap: 2.8rem;
+  }
+}
+
+//footer
+.footer {
+  background-color: $neutral-white-100;
+  padding: 50px 25px 15px 25px;
+  .flex {
+    display: flex;
+    flex-direction: column;
+    .info {
+      flex: 2;
+      p {
+        padding-top: 25px;
+      }
+      hr {
+        margin: 35px 0px 50px 0px;
+      }
+    }
+    .about {
+      flex: 1;
+      h5 {
+        padding-bottom: 10px;
+      }
+    }
+    .office {
+      flex: 1;
+      padding-top: 35px;
+      h5 {
+        padding-bottom: 10px;
+      }
+    }
+    .subscribe {
+      flex: 2;
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      padding-top: 35px;
+      padding-bottom: 40px;
+    }
   }
 }

@@ -14,20 +14,16 @@
         <div class="logo">
           <a><img src="/public/assets/images/Logo.png" /></a>
         </div>
-        <div>
-          <a href="" id="toggle-menu"
-            ><img
-              class="toggle-icon"
-              src="/public/assets/images/align-right.png"
-          /></a>
-          <div class="menu">
-            <ul class="navbar-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
+        <a href="#" class="toggle-button"
+          ><img class="toggle-icon" src="/public/assets/images/align-right.png"
+        /></a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
         <div class="contact">
           <button class="contact-btn fs-18 fw-700">
@@ -40,10 +36,8 @@
       <section class="hero">
         <div class="grid">
           <div>
-            <h1 class="fw-700 fs-52">
-              Create a modern and unique design your dream
-            </h1>
-            <p class="fs-18 fw-600">
+            <h1 class="fw-700">Create a modern and unique design your dream</h1>
+            <p class="fw-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra
               non. Integer lorem in scelerisque tortor dui tempor
@@ -59,50 +53,49 @@
       </section>
       <section class="trusted">
         <div>
-          <h4 class="fs-24 fw-700">Trusted by 75+ partners</h4>
+          <h4 class="fw-700">Trusted by 75+ partners</h4>
         </div>
         <div><img src="/public/assets/images/Logos.png" /></div>
       </section>
       <section class="about-us">
         <div class="container">
           <div class="grid">
-            <div style="display: flex; position: relative">
-              <img
-                width="50"
-                src="/public/assets/images/Rectangle 3.png"
-                alt=""
-              />
-              <img
-                width="50"
-                src="/public/assets/images/Rectangle 4.png"
-                alt=""
-              />
-              <div>
+            <div
+              class="about-us-left"
+              style="display: flex; position: relative"
+            >
+              <div class="about-us-image">
+                <img src="/public/assets/images/Rectangle 3.png" alt="" />
+              </div>
+              <div class="about-us-image1">
+                <img src="/public/assets/images/Rectangle 4.png" alt="" />
+              </div>
+              <div class="about-us-content">
                 <div>
                   <p>10</p>
                   <p>years</p>
                 </div>
+                <hr />
                 <div>
                   <p>200+</p>
                   <p>Projects</p>
                 </div>
+                <hr />
                 <div>
                   <p>75</p>
                 </div>
               </div>
             </div>
-            <div>
+            <div class="about-us-right">
               <div style="display: flex">
                 <hr
                   style="border: 2px solid #000000; flex: inherit"
                   width="80"
                 />
-                <h6 class="fs-18 fw-600" style="flex: 1">Hello There</h6>
+                <h6 class="fw-600" style="flex: 1">Hello There</h6>
               </div>
-              <h2 class="fs-40 fw-700">
-                We work professionally and wholeheartedly
-              </h2>
-              <p class="fs-16 fw-500">
+              <h2 class="fw-700">We work professionally and wholeheartedly</h2>
+              <p class="fw-500">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Adipiscing dui tellus commodo convallis. Auctor eget orci
                 pharetra non. Integer lorem in scelerisque tortor dui tempor,
@@ -120,28 +113,28 @@
         <div class="container">
           <div>
             <div style="display: flex">
-              <p class="fs-18 fw-600" style="flex: inherit">Services</p>
+              <p class="fw-600" style="flex: inherit">Services</p>
               <hr
                 style="border: 1px solid #000000; margin-left: inherit"
                 width="80"
               />
             </div>
-            <h2 class="fs-40 fw-700">
+            <h2 class="fw-700">
               Our capacity to help make your wishes come true
             </h2>
           </div>
           <div class="grid">
             <div class="services-image">
               <img src="/public/assets/images/Interior Design.png" alt="" />
-              <p>Interior Design</p>
+              <h6>Interior Design</h6>
             </div>
             <div class="services-image">
               <img src="/public/assets/images/Architecture.png" alt="" />
-              <p>Architecture design</p>
+              <h6>Architecture design</h6>
             </div>
             <div class="services-image">
               <img src="/public/assets/images/Furniture Design.png" alt="" />
-              <p>Furniture design</p>
+              <h6>Furniture design</h6>
             </div>
           </div>
         </div>
@@ -149,99 +142,104 @@
       <section class="projects">
         <div class="container">
           <div>
-            <p>Our Project</p>
+            <h6 class="fw-600">Our Project</h6>
             <hr />
-            <h2>Our latest projects</h2>
+            <h2 class="fw-700">Our latest projects</h2>
           </div>
           <div class="projects-slider">
             <img src="/public/assets/images/Furniture.png" alt="" />
+            <h6>Hanani Home</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra
+              non.
+            </p>
           </div>
         </div>
       </section>
       <section class="testimonials">
         <div class="container">
-          <div class="even-columns">
-            <div>
-              <p>Testimonial</p>
-              <hr />
+          <div class="testimonial-content">
+            <h6 class="fw-600">Testimonial</h6>
+            <hr />
+            <h2 class="fw-700">What Our Clients Say</h2>
+          </div>
+          <div class="testimonial-cards grid">
+            <div class="testimonial-card">
+              <div class="testimonial-flex">
+                <img src="/public/assets/images/Ellipse 1.png" alt="" />
+                <div>
+                  <p class="fw-700">Menta Nia</p>
+                  <p>Company Name</p>
+                </div>
+              </div>
+              <div>
+                <blockquote>
+                  “ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+                  Adipiscing dui tellus commodo convallis. Auctor eget orci
+                  pharetra non Adipiscing dui tellus commodo convallis. Auctor
+                  eget orci pharetra non “
+                </blockquote>
+              </div>
             </div>
-            <div class="testimonial-cards">
-              <div class="testimonial-card">
+            <div class="testimonial-card">
+              <div class="testimonial-flex">
+                <img src="/public/assets/images/Ellipse 1 (1).png" alt="" />
                 <div>
-                  <img src="/public/assets/images/Ellipse 1.png" alt="" />
-                  <div>
-                    <p>Menta Nia</p>
-                    <p>Company Name</p>
-                  </div>
-                </div>
-                <div>
-                  <blockquote>
-                    “ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-                    Adipiscing dui tellus commodo convallis. Auctor eget orci
-                    pharetra non Adipiscing dui tellus commodo convallis. Auctor
-                    eget orci pharetra non “
-                  </blockquote>
+                  <p class="fw-700">Sannad</p>
+                  <p>Company Name</p>
                 </div>
               </div>
-              <div class="testimonial-card">
+              <div>
+                <blockquote>
+                  “ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+                  Adipiscing dui tellus commodo convallis. Auctor eget orci
+                  pharetra non Adipiscing dui tellus commodo convallis. Auctor
+                  eget orci pharetra non “
+                </blockquote>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-flex">
+                <img src="/public/assets/images/Ellipse 1 (2).png" alt="" />
                 <div>
-                  <img src="/public/assets/images/Ellipse 1 (1).png" alt="" />
-                  <div>
-                    <p>Sannad</p>
-                    <p>Company Name</p>
-                  </div>
-                </div>
-                <div>
-                  <blockquote>
-                    “ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-                    Adipiscing dui tellus commodo convallis. Auctor eget orci
-                    pharetra non Adipiscing dui tellus commodo convallis. Auctor
-                    eget orci pharetra non “
-                  </blockquote>
+                  <p class="fw-700">George</p>
+                  <p>Company Name</p>
                 </div>
               </div>
-              <div class="testimonial-card">
-                <div>
-                  <img src="/public/assets/images/Ellipse 1 (2).png" alt="" />
-                  <div>
-                    <p>George</p>
-                    <p>Company Name</p>
-                  </div>
-                </div>
-                <div>
-                  <blockquote>
-                    “ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-                    Adipiscing dui tellus commodo convallis. Auctor eget orci
-                    pharetra non Adipiscing dui tellus commodo convallis. Auctor
-                    eget orci pharetra non “
-                  </blockquote>
-                </div>
+              <div>
+                <blockquote>
+                  “ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+                  Adipiscing dui tellus commodo convallis. Auctor eget orci
+                  pharetra non Adipiscing dui tellus commodo convallis. Auctor
+                  eget orci pharetra non “
+                </blockquote>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="cta">
-        <div>
-          <h2>Have A Question ? Start Consultation Now</h2>
-          <p>
+        <div class="container cta-content">
+          <h2 class="fw-700">Have A Question ? Start Consultation Now</h2>
+          <p class="fw-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
             dui tellus commodo convallis.
           </p>
-          <button>
+          <button class="cta-btn">
             Contact Us
-            <img src="/public/assets/images/arrow-up-right.png" alt="" />
+            <img src="/public/assets/images/arrow-up-right-white.png" alt="" />
           </button>
         </div>
       </section>
       <section class="blog">
         <div class="container">
           <div>
-            <p>Our Blog</p>
+            <h6 class="fw-600">Our Blog</h6>
             <hr />
-            <h2>Latest News and Articles</h2>
+            <h2 class="fw-700">Latest News and Articles</h2>
           </div>
-          <div class="even-columns">
+          <div class="grid">
             <div class="article">
               <img src="/public/assets/images/Card.png" alt="" />
               <p>Interior Design</p>
@@ -275,16 +273,11 @@
           </div>
         </div>
       </section>
-      <section class="footer">
-        <div class="container">
-          <div class="even-columns"></div>
-        </div>
-      </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="even-columns">
-          <div>
+        <div class="flex">
+          <div class="info">
             <img src="/public/assets/images/Logo.png" alt="" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -292,18 +285,19 @@
               non. Integer lorem in scelerisque tortor dui tempor, volutpat
               viverra faucibus.
             </p>
+            <hr />
           </div>
-          <div>
+          <div class="about">
             <h5>About</h5>
             <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Portfolio</li>
-              <li>Contact Us</li>
-              <li>Blog</li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Blog</a></li>
             </ul>
           </div>
-          <div>
+          <div class="office">
             <h5>Office</h5>
             <ul>
               <li>Scandinavian design</li>
@@ -312,7 +306,7 @@
               <li>Minimalist Design</li>
             </ul>
           </div>
-          <div>
+          <div class="subscribe">
             <h5>Stay Tuned for upadates</h5>
             <div>
               <input type="text" placeholder="Email" />
@@ -333,9 +327,17 @@
           </div>
         </div>
         <div class="footer-bottom">
+          <hr />
           <p>Imah © 2022. All Rights Reseved.</p>
         </div>
       </div>
     </footer>
+    <script>
+      const toggleButton = document.querySelector(".toggle-button");
+      const navbarLinks = document.querySelector(".navbar-links");
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
