@@ -190,8 +190,8 @@ img {
 }
 .about-us .about-us-left .about-us-content {
   position: absolute;
-  bottom: -36px;
-  left: 83px;
+  bottom: -24%;
+  left: 12%;
   background-color: #f2f2f2;
   padding: 20px 25px 21px 29px;
   display: flex;
@@ -200,7 +200,11 @@ img {
   margin: 0px 26px;
 }
 .about-us .about-us-right {
-  padding: 40px 0px 0px 0px;
+  margin-top: 100px;
+  padding: 0px 0px 0px 0px;
+}
+.about-us .about-us-right h6 {
+  margin-left: 20px;
 }
 .about-us .about-us-right h2 {
   padding-top: 15px;
@@ -241,9 +245,6 @@ img {
 }
 .projects .container .projects-slider {
   position: relative;
-}
-.projects .container .projects-slider img {
-  height: 40vh;
 }
 .projects .container .projects-slider h6 {
   position: absolute;
@@ -393,7 +394,7 @@ img {
     line-height: 19px;
   }
   .container {
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     margin-inline: auto;
   }
   .grid {
@@ -410,7 +411,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
   .hero .grid div:first-child {
-    padding: 100px 45px 33px 100px;
+    padding: 100px 63px 33px 100px;
   }
   .hero .grid div:first-child h1 {
     padding: 0px 0px 35px 0px;
@@ -423,9 +424,10 @@ img {
   }
   .trusted {
     flex-direction: row;
+    justify-content: flex-end;
   }
   .trusted div:first-child {
-    padding-left: 71px;
+    padding-left: 75px;
     flex: 0 1 20%;
   }
   .trusted div:first-child h4 {
@@ -440,6 +442,13 @@ img {
   .about-us .grid {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4.4rem;
+  }
+  .about-us .grid .about-us-left .about-us-content {
+    bottom: 4%;
+    left: 32%;
+  }
+  .about-us .grid .about-us-right {
+    margin-top: 40px;
   }
   .about-us .grid .about-us-right h2 {
     padding-top: 25px;
@@ -459,8 +468,12 @@ img {
   .projects {
     padding: 90px 0px;
   }
-  .projects .container div:first-child h2 {
+  .projects .container div:first-child {
+    padding: 0px;
+  }
+  .projects .container div h2 {
     padding-top: 25px;
+    padding-bottom: 35px;
   }
   .testimonials {
     padding: 90px 0px;
@@ -520,4 +533,4 @@ img {
 }
 .cta-btn img {
   margin-left: 15px;
-}/*# sourceMappingURL=style.css.map */
+}

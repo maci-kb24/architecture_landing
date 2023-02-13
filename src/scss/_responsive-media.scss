@@ -59,7 +59,7 @@
     line-height: 19px;
   }
   .container {
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     margin-inline: auto;
   }
   .grid {
@@ -74,7 +74,7 @@
     .grid {
       grid-template-columns: repeat(2, 1fr);
       div:first-child {
-        padding: 100px 45px 33px 100px;
+        padding: 100px 63px 33px 100px;
         h1 {
           padding: 0px 0px 35px 0px;
         }
@@ -90,8 +90,9 @@
   }
   .trusted {
     flex-direction: row;
+    justify-content: flex-end;
     div:first-child {
-      padding-left: 71px;
+      padding-left: 75px;
       flex: 0 1 20%;
       h4 {
         padding-bottom: 0px;
@@ -106,7 +107,14 @@
     .grid {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 4.4rem;
+      .about-us-left {
+        .about-us-content {
+          bottom: 4%;
+          left: 32%;
+        }
+      }
       .about-us-right {
+        margin-top: 40px;
         h2 {
           padding-top: 25px;
         }
@@ -129,9 +137,11 @@
     padding: 90px 0px;
     .container {
       div:first-child {
-        h2 {
-          padding-top: 25px;
-        }
+        padding: 0px;
+      }
+      div h2 {
+        padding-top: 25px;
+        padding-bottom: 35px;
       }
     }
   }
