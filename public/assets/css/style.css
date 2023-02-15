@@ -164,6 +164,14 @@ img {
 .hero .grid .hero-left p {
   padding-bottom: 25px;
 }
+.hero .grid .hero-right .splide .splide__arrow {
+  bottom: 0;
+  top: auto;
+}
+.hero .grid .hero-right .splide .splide__arrow--prev {
+  right: 6%;
+  left: auto;
+}
 .hero .grid .hero-right .splide-list .splide__splide {
   width: auto !important;
 }
