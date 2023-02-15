@@ -72,6 +72,11 @@ h2 {
   line-height: 34px;
 }
 
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
 h4 {
   font-size: 20px;
   line-height: 24px;
@@ -150,17 +155,17 @@ img {
 .hero {
   padding-bottom: 50px;
 }
-.hero .grid div:first-child {
+.hero .grid .hero-left {
   padding: 25px 25px 50px 25px;
 }
-.hero .grid div:first-child h1 {
+.hero .grid .hero-left h1 {
   padding-bottom: 15px;
 }
-.hero .grid div:first-child p {
+.hero .grid .hero-left p {
   padding-bottom: 25px;
 }
-.hero .grid div img {
-  height: 100%;
+.hero .grid .hero-right .splide-list .splide__splide {
+  width: auto !important;
 }
 
 .trusted {
@@ -243,8 +248,14 @@ img {
   padding-top: 15px;
   padding-bottom: 35px;
 }
+.projects .container div:nth-child(2) {
+  padding-left: 25px;
+}
 .projects .container .projects-slider {
   position: relative;
+}
+.projects .container .projects-slider img {
+  min-height: 320px;
 }
 .projects .container .projects-slider h6 {
   position: absolute;
@@ -290,9 +301,18 @@ img {
 .blog {
   padding: 50px 25px;
 }
+.blog h2 {
+  padding: 15px 0px 35px 0px;
+}
 .blog .grid {
   column-gap: 3.1rem;
   row-gap: 2.8rem;
+}
+.blog .grid .article p {
+  padding-top: 15px;
+}
+.blog .grid .article h3 {
+  padding-top: 15px;
 }
 
 .footer {
@@ -302,6 +322,7 @@ img {
 .footer .flex {
   display: flex;
   flex-direction: column;
+  padding-bottom: 44px;
 }
 .footer .flex .info {
   flex: 2;
@@ -318,12 +339,28 @@ img {
 .footer .flex .about h5 {
   padding-bottom: 10px;
 }
+.footer .flex .about ul li {
+  padding-bottom: 5px;
+}
+.footer .flex .about ul li a {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+}
 .footer .flex .office {
   flex: 1;
   padding-top: 35px;
 }
 .footer .flex .office h5 {
   padding-bottom: 10px;
+}
+.footer .flex .office ul li {
+  padding-bottom: 5px;
+}
+.footer .flex .office ul li a {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
 }
 .footer .flex .subscribe {
   flex: 2;
@@ -332,6 +369,31 @@ img {
   flex-direction: column;
   padding-top: 35px;
   padding-bottom: 40px;
+}
+.footer .flex .subscribe .footer-form {
+  margin: 25px 0px 39px 0px;
+  display: flex;
+}
+.footer .flex .subscribe .footer-form input {
+  font-size: 14px;
+  line-height: 26px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 3px 0px 3px 5px;
+  background: transparent;
+  color: #3d3d3d;
+}
+.footer .flex .subscribe ul {
+  display: flex;
+}
+.footer .flex .subscribe ul li {
+  padding-right: 30px;
+}
+.footer .footer-bottom {
+  text-align: center;
+}
+.footer .footer-bottom p {
+  padding-top: 11px;
 }
 
 @media (max-width: 800px) {
@@ -375,6 +437,10 @@ img {
     font-size: 40px;
     line-height: 54px;
   }
+  h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
   h4 {
     font-size: 24px;
     line-height: 32px;
@@ -410,16 +476,16 @@ img {
   .hero .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .hero .grid div:first-child {
+  .hero .grid .hero-left {
     padding: 100px 63px 33px 100px;
   }
-  .hero .grid div:first-child h1 {
+  .hero .grid .hero-left h1 {
     padding: 0px 0px 35px 0px;
   }
-  .hero .grid div:first-child p {
+  .hero .grid .hero-left p {
     padding-bottom: 50px;
   }
-  .hero .grid div:last-child {
+  .hero .grid .hero-right {
     margin-top: 40px;
   }
   .trusted {
@@ -471,18 +537,40 @@ img {
   .projects .container div:first-child {
     padding: 0px;
   }
+  .projects .container div:nth-child(2) {
+    padding-left: 0px;
+  }
   .projects .container div h2 {
     padding-top: 25px;
     padding-bottom: 35px;
   }
+  .projects .container .projects-slider img {
+    height: auto;
+  }
   .testimonials {
-    padding: 90px 0px;
+    padding: 0px 0px 90px 0px;
+  }
+  .testimonials .testimonial-content h6 {
+    margin-right: 20px;
   }
   .testimonials .testimonial-content h2 {
     padding: 25px 0px 35px 0px;
   }
   .blog {
     padding: 90px 0px 100px 0px;
+  }
+  .blog h6 {
+    margin-right: 20px;
+  }
+  .blog h2 {
+    padding: 25px 0px 35px 0px;
+  }
+  .blog .grid .article p {
+    padding-top: 10px;
+  }
+  .blog .grid .article h3 {
+    padding-top: 10px;
+    padding-bottom: 25px;
   }
   .footer {
     padding: 75px 0px 17px 0px;
@@ -492,6 +580,30 @@ img {
   }
   .footer .flex div:first-child hr {
     display: none;
+  }
+  .footer .flex .about {
+    margin-left: 70px;
+  }
+  .footer .flex .about ul li a {
+    font-size: 18px;
+  }
+  .footer .flex .office {
+    margin-left: 60px;
+    padding-top: 0px;
+  }
+  .footer .flex .office ul li a {
+    font-size: 18px;
+  }
+  .footer .flex .subscribe {
+    padding-left: 61px;
+    padding-top: 0px;
+  }
+  .footer .flex .subscribe .footer-form {
+    margin: 25px 0px 25px 0px;
+  }
+  .footer .flex .subscribe .footer-form input {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 .contact-btn {

@@ -7,6 +7,7 @@
     <title>Architecture - Landing Page</title>
     <link rel="stylesheet" href="/public/assets/css/style.css" />
     <link rel="stylesheet" href="/public/assets/css/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   </head>
   <body>
     <header>
@@ -35,7 +36,7 @@
     <main>
       <section class="hero">
         <div class="grid">
-          <div>
+          <div class="hero-left">
             <h1 class="fw-700">Create a modern and unique design your dream</h1>
             <p class="fw-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -46,9 +47,18 @@
               view a project<img src="/public/assets/images/arrow-right.png" />
             </button>
           </div>
-          <div>
-            <img src="/public/assets/images/Rectangle 1.png" />
-          </div>
+          <div class="hero-right">
+            <div class="splide" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="/public/assets/images/Rectangle 1.png" alt=""></li>
+                  <li class="splide__slide"><img src="/public/assets/images/square_730x500.jpg" alt=""></li>
+                  <li class="splide__slide"><img src="/public/assets/images/sqare1_730x500.jpg" alt=""></li>
+                  <li class="splide__slide"><img src="/public/assets/images/sqare2_730x500.jpg" alt=""></li>
+                </ul>
+              </div>                                        
+            </div>                                                                                       
+            <!-- <img src="/public/assets/images/Rectangle 1.png" /> -->
         </div>
       </section>
       <section class="trusted">
@@ -180,8 +190,17 @@
       <section class="testimonials">
         <div class="container">
           <div class="testimonial-content">
-            <h6 class="fw-600">Testimonial</h6>
-            <hr />
+            <div style="display: flex">
+              <h6 class="fw-600">Testimonial</h6>
+              <hr
+                style="
+                  border: 1px solid #000000;
+                  margin-left: inherit;
+                  background-color: #000000;
+                "
+                width="80"
+              />
+            </div>
             <h2 class="fw-700">What Our Clients Say</h2>
           </div>
           <div class="testimonial-cards grid">
@@ -255,15 +274,24 @@
       <section class="blog">
         <div class="container">
           <div>
-            <h6 class="fw-600">Our Blog</h6>
-            <hr />
+            <div style="display: flex">
+              <h6 class="fw-600">Our Blog</h6>
+              <hr
+                style="
+                  border: 1px solid #000000;
+                  margin-left: inherit;
+                  background-color: #000000;
+                "
+                width="80"
+              />
+            </div>
             <h2 class="fw-700">Latest News and Articles</h2>
           </div>
           <div class="grid">
             <div class="article">
               <img src="/public/assets/images/Card.png" alt="" />
               <p>Interior Design</p>
-              <h5>Designer must be an interpreter</h5>
+              <h3 class="fw-700">Designer must be an interpreter</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Adipiscing dui tellus commodo convallis. Auctor eget orci
@@ -273,7 +301,7 @@
             <div class="article">
               <img src="/public/assets/images/Card (1).png" alt="" />
               <p>Interior Design</p>
-              <h5>12 Best Outdoor Furniture Ideas</h5>
+              <h3 class="fw-700">12 Best Outdoor Furniture Ideas</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Adipiscing dui tellus commodo convallis. Auctor eget orci
@@ -283,7 +311,7 @@
             <div class="article">
               <img src="/public/assets/images/Card (2).png" alt="" />
               <p>Architecture</p>
-              <h5>10 Of The Unique Buildings</h5>
+              <h3 class="fw-700">10 Of The Unique Buildings</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Adipiscing dui tellus commodo convallis. Auctor eget orci
@@ -310,29 +338,29 @@
           <div class="about">
             <h5>About</h5>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#" class="fw-700">About Us</a></li>
+              <li><a href="#" class="fw-700">Services</a></li>
+              <li><a href="#" class="fw-700">Portfolio</a></li>
+              <li><a href="#" class="fw-700">Contact Us</a></li>
+              <li><a href="#" class="fw-700">Blog</a></li>
             </ul>
           </div>
           <div class="office">
             <h5>Office</h5>
             <ul>
-              <li>Scandinavian design</li>
-              <li>Smart House</li>
-              <li>Modern Design</li>
-              <li>Minimalist Design</li>
+              <li><a href="#" class="fw-700">Scandinavian design</a></li>
+              <li><a href="#" class="fw-700">Smart House</a></li>
+              <li><a href="#" class="fw-700">Modern Design</a></li>
+              <li><a href="#" class="fw-700">Minimalist Design</a></li>
             </ul>
           </div>
           <div class="subscribe">
-            <h5>Stay Tuned for upadates</h5>
-            <div>
+            <p class="fw-700">Stay Tuned for upadates</p>
+            <div class="footer-form">
               <input type="text" placeholder="Email" />
-              <a href="#"
+              <button href="#"
                 ><img src="/public/assets/images/arrow-right.png" alt=""
-              /></a>
+              /></button>
             </div>
             <div>
               <ul>
@@ -352,12 +380,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      const toggleButton = document.querySelector(".toggle-button");
-      const navbarLinks = document.querySelector(".navbar-links");
-      toggleButton.addEventListener("click", () => {
-        navbarLinks.classList.toggle("active");
-      });
-    </script>
+    <script src="/public/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   </body>
 </html>

@@ -40,6 +40,10 @@
     font-size: $fs-40;
     line-height: 54px;
   }
+  h3 {
+    font-size: $fs-32;
+    line-height: 42px;
+  }
   h4 {
     font-size: $fs-24;
     line-height: 32px;
@@ -73,7 +77,7 @@
     padding-bottom: 90px;
     .grid {
       grid-template-columns: repeat(2, 1fr);
-      div:first-child {
+      .hero-left {
         padding: 100px 63px 33px 100px;
         h1 {
           padding: 0px 0px 35px 0px;
@@ -82,8 +86,7 @@
           padding-bottom: 50px;
         }
       }
-
-      div:last-child {
+      .hero-right {
         margin-top: 40px;
       }
     }
@@ -139,15 +142,26 @@
       div:first-child {
         padding: 0px;
       }
+      div:nth-child(2) {
+        padding-left: 0px;
+      }
       div h2 {
         padding-top: 25px;
         padding-bottom: 35px;
       }
+      .projects-slider {
+        img {
+          height: auto;
+        }
+      }
     }
   }
   .testimonials {
-    padding: 90px 0px;
+    padding: 0px 0px 90px 0px;
     .testimonial-content {
+      h6 {
+        margin-right: 20px;
+      }
       h2 {
         padding: 25px 0px 35px 0px;
       }
@@ -155,6 +169,23 @@
   }
   .blog {
     padding: 90px 0px 100px 0px;
+    h6 {
+      margin-right: 20px;
+    }
+    h2 {
+      padding: 25px 0px 35px 0px;
+    }
+    .grid {
+      .article {
+        p {
+          padding-top: 10px;
+        }
+        h3 {
+          padding-top: 10px;
+          padding-bottom: 25px;
+        }
+      }
+    }
   }
   .footer {
     padding: 75px 0px 17px 0px;
@@ -163,6 +194,38 @@
       div:first-child {
         hr {
           display: none;
+        }
+      }
+      .about {
+        margin-left: 70px;
+        ul {
+          li {
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .office {
+        margin-left: 60px;
+        padding-top: 0px;
+        ul {
+          li {
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .subscribe {
+        padding-left: 61px;
+        padding-top: 0px;
+        .footer-form {
+          margin: 25px 0px 25px 0px;
+          input {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
       }
     }
