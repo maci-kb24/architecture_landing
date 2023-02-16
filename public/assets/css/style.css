@@ -167,6 +167,8 @@ img {
 .hero .grid .hero-right .splide .splide__arrow {
   bottom: 0;
   top: auto;
+  background: rgba(217, 217, 217, 0.2);
+  backdrop-filter: blur(5px);
 }
 .hero .grid .hero-right .splide .splide__arrow--prev {
   right: 6%;
@@ -261,9 +263,6 @@ img {
 }
 .projects .container .projects-slider {
   position: relative;
-}
-.projects .container .projects-slider img {
-  min-height: 320px;
 }
 .projects .container .projects-slider h6 {
   position: absolute;
