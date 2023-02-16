@@ -56,11 +56,11 @@
         .splide__arrow {
           bottom: 0;
           top: auto;
-          background: rgba(217, 217, 217, 0.2);
+          background-color: $neutral-black;
           backdrop-filter: blur(5px);
         }
         .splide__arrow--prev {
-          right: 6%;
+          right: 11%;
           left: auto;
         }
       }
@@ -151,7 +151,7 @@
   padding: 50px 0px;
   .container {
     div:first-child {
-      padding: 0px 25px;
+      // padding: 0px 25px;
       h2 {
         padding-top: 15px;
         padding-bottom: 35px;
@@ -186,7 +186,7 @@
   background-repeat: no-repeat;
   height: 63vh;
   .cta-content {
-    padding-top: 78px;
+    padding: 78px 0px 0px 25px;
   }
 }
 
@@ -298,6 +298,11 @@
           padding: 3px 0px 3px 5px;
           background: transparent;
           color: $neutral-black-100;
+        }
+        .footer-form-btn {
+          background-color: $neutral-black;
+          border: none;
+          padding: 8px 20px 8px 20px;
         }
       }
       ul {

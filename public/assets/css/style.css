@@ -167,11 +167,11 @@ img {
 .hero .grid .hero-right .splide .splide__arrow {
   bottom: 0;
   top: auto;
-  background: rgba(217, 217, 217, 0.2);
+  background-color: #000000;
   backdrop-filter: blur(5px);
 }
 .hero .grid .hero-right .splide .splide__arrow--prev {
-  right: 6%;
+  right: 11%;
   left: auto;
 }
 .hero .grid .hero-right .splide-list .splide__splide {
@@ -251,9 +251,6 @@ img {
 .projects {
   padding: 50px 0px;
 }
-.projects .container div:first-child {
-  padding: 0px 25px;
-}
 .projects .container div:first-child h2 {
   padding-top: 15px;
   padding-bottom: 35px;
@@ -285,7 +282,7 @@ img {
   height: 63vh;
 }
 .cta .cta-content {
-  padding-top: 78px;
+  padding: 78px 0px 0px 25px;
 }
 
 .testimonials {
@@ -389,6 +386,11 @@ img {
   padding: 3px 0px 3px 5px;
   background: transparent;
   color: #3d3d3d;
+}
+.footer .flex .subscribe .footer-form .footer-form-btn {
+  background-color: #000000;
+  border: none;
+  padding: 8px 20px 8px 20px;
 }
 .footer .flex .subscribe ul {
   display: flex;
