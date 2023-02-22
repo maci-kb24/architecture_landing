@@ -14,7 +14,4 @@ document.addEventListener("DOMContentLoaded", function () {
       pagination: (boolean = false),
     }).mount();
   }
-
-  //   var splide = new Splide(".splide");
-  //   splide.mount();
 });

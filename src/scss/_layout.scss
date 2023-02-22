@@ -38,7 +38,7 @@
   display: none;
 }
 
-//hero
+//hero section
 .hero {
   padding-bottom: 50px;
   .grid {
@@ -73,7 +73,7 @@
   }
 }
 
-//trusted
+//trusted section
 .trusted {
   display: flex;
   flex-direction: column;
@@ -83,10 +83,9 @@
   }
 }
 
-//about-us
+//about-us section
 .about-us {
   padding: 50px 25px;
-  // margin: 0px 25px;
   .about-us-left {
     display: flex;
     position: relative;
@@ -126,7 +125,7 @@
   }
 }
 
-//services
+//services section
 .services {
   padding: 0px 25px;
   .container div h2 {
@@ -146,7 +145,7 @@
     }
   }
 }
-//projects
+//projects section
 .projects {
   padding-top: 50px;
   .container {
@@ -176,11 +175,14 @@
         bottom: 40px;
         color: $neutral-white;
       }
+      img {
+        height: 50vh;
+      }
     }
   }
 }
 
-//cta
+//cta section
 .cta {
   background-image: url("../images/CTA.png");
   background-size: cover;
@@ -206,8 +208,16 @@
   .testimonial-card {
     background-color: $neutral-white-100;
     padding: 25px 21px 40px 25px;
+
     .testimonial-flex {
       display: flex;
+      align-items: center;
+      p {
+        padding-left: 15px;
+      }
+    }
+    .testimonial-quote {
+      padding-top: 20px;
     }
   }
 }
