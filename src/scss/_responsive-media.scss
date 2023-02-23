@@ -161,6 +161,12 @@
   }
   .testimonials {
     padding: 0px 0px 90px 0px;
+    .grid {
+      display: grid;
+    }
+    .testimonial-slider {
+      display: none;
+    }
     .testimonial-content {
       h6 {
         margin-right: 20px;

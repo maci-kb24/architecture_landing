@@ -296,6 +296,7 @@ img {
 }
 .testimonials .grid {
   gap: 3.1rem;
+  display: none;
 }
 .testimonials .testimonial-content h2 {
   padding: 21px 0px 40px 0px;
@@ -574,6 +575,12 @@ img {
   }
   .testimonials {
     padding: 0px 0px 90px 0px;
+  }
+  .testimonials .grid {
+    display: grid;
+  }
+  .testimonials .testimonial-slider {
+    display: none;
   }
   .testimonials .testimonial-content h6 {
     margin-right: 20px;
