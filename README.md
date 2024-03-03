@@ -13,3 +13,8 @@ the challenge was to make the landing page pixel perfect on mobile and deskop ve
 ```
 gh repo clone maci-kb24/architecture_landing
 ```
+
+Or download the code as a zip file. On your local machine, run 
+```
+npm install
+```
